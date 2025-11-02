@@ -51,6 +51,8 @@
    color: black;
 }
 
+/* HERO SECTION */
+
 .hero-section,
 .hero-section .carousel,
 .hero-section .carousel-item,
@@ -72,16 +74,17 @@
 .carousel-indicators [data-bs-target] {
   width: 10px;        
   height: 10px;       
-  border-radius: 50%; 
-}
-.carousel-indicators {
-  gap: 7px;
-  bottom: 80px;    
-}
-.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
   background-color: #fff;
   opacity: 0.6;          
 }
+
+.carousel-indicators {
+  gap: 7px;
+  bottom: 20px;    
+  justify-content: center;
+}
+
 .carousel-indicators .active {
   opacity: 1;                             
   width: 13px;                            
@@ -89,12 +92,38 @@
   background-color: #007efc;              
   transition: all 0.3s ease-in-out;      
 }
+
 @media (max-width: 768px) {
+  .carousel-indicators {
+    bottom: 5px;
+  }
   .carousel-indicators [data-bs-target] {
     width: 14px;
     height: 14px;
   }
 }
+.carousel-buttons {
+  display: flex;
+  justify-content: center; 
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.carousel-buttons .btn {
+  min-width: 130px;
+}
+
+@media (max-width: 768px) {
+  .carousel-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel-buttons .btn {
+    width: 80%; 
+  }
+}
+
+
 /* Cards Section */
 .hero-cards-section .hover-card {
   background-color: rgba(0, 123, 255, 0.8); 
