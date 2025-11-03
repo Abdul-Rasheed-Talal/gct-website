@@ -10,11 +10,7 @@
     transition: all 2s, background 1s;
 
 }
-/* .department-readmore img:hover{
-    width: 20%;
-    display: flex;
 
-} */
 .department-readmore:hover{
     display: flex;
 }
@@ -343,7 +339,7 @@ color: rgb(98, 63, 184);
     
 .principal-message {
     background: linear-gradient(rgba(1, 33, 71, 0.85), rgba(18, 41, 114, 0.85)), 
-                url(/gct-bhakkar-website-design/assets/images/background\ picture.jpg);
+                url(/assets/images/background\ picture.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -420,46 +416,95 @@ color: rgb(98, 63, 184);
 
 .nav-link:hover {
   color: #00ff88 !important;
-  transform: scale(1.08);
 }
+
 
 /* Apply Now Button */
 .btn-primary {
   background-color: #007bff;
   border: none;
 }
-
-/* Remove default navbar-toggler styles */
 .navbar-toggler {
-  border: none;
-  outline: none !important;
+    border: 0 !important;
 }
 
-/* Hamburger Animation */
-.toggler-icon {
-  width: 28px;
-  height: 3px;
-  background-color: #00bcd4;
-  display: block;
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #e74c3c;
+    display: block;
+    transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar{
+    margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: #777777;
+}
+
+/* navbar expanding underline hover effect */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #00ff88;
   transition: all 0.3s ease;
 }
 
-.middle-bar {
-  margin: 5px auto;
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
 }
-
-.navbar-toggler.collapsed .toggler-icon {
-  background-color: #00bcd4;
-}
-
-.navbar-toggler:not(.collapsed) .top-bar {
-  transform: rotate(45deg) translateY(8px);
-}
-
-.navbar-toggler:not(.collapsed) .middle-bar {
-  opacity: 0;
-}
-
-.navbar-toggler:not(.collapsed) .bottom-bar {
-  transform: rotate(-45deg) translateY(-8px);
-}
+/* End of Floating Navbar */
