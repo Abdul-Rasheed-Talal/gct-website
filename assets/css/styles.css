@@ -208,7 +208,7 @@ height: 20px;
 }
 
 .main-card {
-    width: 290px;
+    width: 18rem;
     
     
 }
@@ -230,7 +230,7 @@ color: rgb(98, 63, 184);
 }
 .card-section{
     padding-top: 30px;
-    height: 300px;
+   height: 18rem;
     border-top: 3px solid rgb(76, 93, 220); 
     margin-top: 10px;
     background-color: rgb(240, 239, 238);
@@ -246,8 +246,8 @@ color: rgb(98, 63, 184);
     transform: translate(-50%, -50%);
 }
 .icon-bg-white {
-    width: 80px;
-    height: 80px;
+  width: 5rem;
+    height: 5rem;
     background-color: white;
     border: 2px solid  rgb(76, 93, 220);
     border-radius: 50%;
