@@ -785,8 +785,8 @@ color: rgb(98, 63, 184);
     left: 15%;
       width: 71%;
       height: 100px;   
-     border: 3px solid  rgb(76, 93, 220);
-    background-color: rgb(231, 216, 249);
+     border: 7px solid white;
+    background-color: rgb(198, 169, 234);
      border-top: none;
       border-radius: 0px 0px 200px 200px; 
     }
