@@ -706,6 +706,7 @@ color: rgb(98, 63, 184);
     margin: 19px auto; 
     position: relative;
    
+    /*== Naseer style == */
 }
   body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
@@ -718,7 +719,7 @@ color: rgb(98, 63, 184);
    
     .section-title {
       font-size: 45px;
-      font-weight: 700;
+      font-weight: 600;
     }
 
     .section-descrip {
@@ -728,8 +729,6 @@ color: rgb(98, 63, 184);
 
     /* Cards container */
     .campus-cards {
-      border-left: 14px solid #2A323A;
-      border-right: 14px solid #2A323A;
       background: #fff;
       border-radius: 8px;
       padding: 30px;
@@ -745,7 +744,7 @@ color: rgb(98, 63, 184);
     }
 
     .campus-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px);
     }
 
     /* Image style */
