@@ -1,14 +1,13 @@
 :root {
-  --primary-dark: #2d3748;      /* 60% - Main dark background */
-  --secondary-dark: #4a5568;    /* 30% - Secondary elements */
-  --accent-teal: #38b2ac;       /* 10% - Primary accent */
-  --accent-gold: #d69e2e;       /* Secondary accent */
-  --text-light: #e2e8f0;        /* Light text */
-  --text-muted: #a0aec0;        /* Muted text */
-  --card-bg: rgba(45, 55, 72, 0.8);
-  --border-color: rgba(56, 178, 172, 0.2);
+  --primary-dark: #1e293b;      /* Slate 800 */
+  --secondary-dark: #334155;    /* Slate 700 */
+  --accent-teal: #2563eb;       /* Blue 600 */
+  --accent-gold: #f59e0b;       /* Amber 500 */
+  --text-light: #f1f5f9;        /* Slate 100 */
+  --text-muted: #94a3b8;        /* Slate 400 */
+  --card-bg: rgba(30, 41, 59, 0.8);
+  --border-color: rgba(37, 99, 235, 0.3);
 }
-
 /* Bootstrap Class Overrides */
 .text-primary { color: var(--accent-teal) !important; }
 .bg-primary { background-color: var(--accent-teal) !important; }
