@@ -1,0 +1,305 @@
+.hero-section {
+    background: linear-gradient(135deg, rgba(30,58,138,0.9) 0%, rgba(5,150,105,0.8) 100%),
+                url('/gct-bhakkar-website-design/assets/images/college-side-view.jpg');
+    color: #ffffff;
+    padding: 30vh 0;
+    text-align: center;
+    height: 100vh;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: rgba(240, 167, 8);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+.btn-hero {
+    background-color: #e69008;
+    color: black;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.btn-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    background-color: #e69008;
+}
+
+.btn-apply {
+    background-color: transparent;
+    color: #fff;
+    border: 0.5px solid white;
+}
+
+.btn-apply:hover {
+    background-color: white;
+    color: black;
+}
+
+@media(max-width:768px){
+    .hero-title { font-size: 2.5rem; }
+    .hero-subtitle { font-size: 1.2rem; }
+}
+
+
+.admission-process-section {
+    background-color: #334155;
+}
+
+.process-card {
+    background: rgba(30, 41, 59, 0.8);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    color: #94a3b8;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.process-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.process-icon {
+    font-size: 40px;
+    color: #94a3b8;
+    transition: 0.3s ease;
+}
+
+.process-card:hover .process-icon {
+    color: #ffffff;
+}
+
+@media (max-width: 576px) {
+    .process-card {
+        padding: 30px 15px;
+    }
+}
+
+
+
+/* Requirements Section Background */
+.requirements-section {
+    background-color: #243a58; /* same as process icons */
+}
+
+/* Requirements Cards */
+.req-card {
+    background: #294874; /* same as process section background */
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    color: #cbd5e1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+.req-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+.req-icon {
+    font-size: 40px;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.req-card:hover .req-icon {
+    transform: scale(1.2);
+}
+
+@media (max-width: 576px) {
+    .req-card {
+        padding: 30px 15px;
+    }
+}
+
+.fee-section {
+    background-color: #ffffff; /* white background for section */
+}
+
+.fee-card {
+    background: #385b86; /* dark card background same as process section */
+    border-radius: 12px;
+    color: #cbd5e1;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+.fee-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+.fee-list {
+    list-style: none;
+    padding: 0;
+}
+
+.fee-list li {
+    padding: 6px 0;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.fee-list li span {
+    float: right;
+    font-weight: bold;
+    color: #ffffff; /* card text color remains white for readability */
+}
+
+@media (max-width: 576px) {
+    .fee-card {
+        padding: 30px 20px;
+    }
+}
+
+
+
+
+
+.support-section {
+    background-color: #283e5e; /* dark theme same as process section background */
+}
+
+.support-card {
+    background: rgba(148, 163, 184, 0.18); /* light layer effect */
+    border-radius: 12px;
+    color: #cbd5e1;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.support-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+    background: rgba(148, 163, 184, 0.28);
+}
+
+.support-icon {
+    font-size: 42px;
+    color: #94a3b8; /* theme matching */
+    transition: 0.3s ease;
+}
+
+.support-card:hover .support-icon {
+    color: #ffffff;
+    transform: scale(1.15);
+}
+
+@media (max-width: 576px) {
+    .support-card {
+        padding: 25px 15px;
+    }
+}
+
+
+.scholarship-section {
+    background-color: #1d375c; /* same dark background */
+}
+
+.scholarship-card {
+    background: rgba(148, 163, 184, 0.18); /* light overlay */
+    border-radius: 12px;
+    color: #cbd5e1;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+.scholarship-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+    background: rgba(148, 163, 184, 0.28);
+}
+
+.scholarship-icon {
+    font-size: 42px;
+    color: #94a3b8;
+    transition: 0.3s ease;
+}
+
+.scholarship-card:hover .scholarship-icon {
+    transform: scale(1.15);
+    color: #ffffff;
+}
+
+
+.faq-section {
+    background-color: #ffffff; /* white background */
+    color: #334155; /* dark text */
+}
+
+.accordion-button {
+    background-color: #f1f5f9; /* light gray button */
+    color: #334155;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #cbd5e1; /* slightly darker when expanded */
+    color: #334155;
+}
+
+.accordion-body {
+    background-color: #f8fafc; /* light content background */
+    color: #334155;
+    font-size: 0.95rem;
+}
+
+
+.testimonials-section {
+    background-color: #1e293b; /* same dark as process section */
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.testimonial-card {
+    background: rgba(30, 41, 59, 0.8); /* same as process card */
+    border-radius: 15px;
+    padding: 30px 20px;
+    color: #94a3b8; /* text color same as process icons */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.profile-pic-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+}
+
+.status-circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #10b981; /* green circle */
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
