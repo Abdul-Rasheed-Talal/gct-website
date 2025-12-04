@@ -12,7 +12,7 @@
 
         /* Hero Section */
         .hero-section {
-            background: linear-gradient(rgba(10, 26, 51, 0.85), rgba(10, 26, 51, 0.9)),
+            background: linear-gradient(rgba(17, 35, 64, 0.85), rgba(19, 42, 78, 0.9)),
                 url('/assets/images/college-front-view.jpg') no-repeat center center;
             background-size: cover;
             color: white;
