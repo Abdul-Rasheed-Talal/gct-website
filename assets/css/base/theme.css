@@ -1,0 +1,335 @@
+/*
+ * GCT Bhakkar - Theme System
+ * Light and Dark theme variables with smooth transitions
+ */
+
+/* ===== DARK THEME (Default) ===== */
+:root {
+    /* Color Mode */
+    --mode: dark;
+
+    /* Primary Colors */
+    --color-primary-dark: #0f172a;
+    --color-secondary-dark: #1e293b;
+    --color-tertiary-dark: #334155;
+
+    /* Accent Colors */
+    --color-accent-primary: #3b82f6;
+    --color-accent-secondary: #60a5fa;
+    --color-accent-gold: #f59e0b;
+    --color-accent-teal: #14b8a6;
+
+    /* Text Colors */
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e2e8f0;
+    --color-text-muted: #94a3b8;
+    --color-text-dark: #1e293b;
+
+    /* Background Colors */
+    --color-bg-primary: #0f172a;
+    --color-bg-secondary: #1e293b;
+    --color-bg-tertiary: #334155;
+    --color-bg-card: rgba(30, 41, 59, 0.95);
+    --color-bg-glass: rgba(15, 23, 42, 0.98);
+    --color-bg-overlay: rgba(0, 0, 0, 0.6);
+
+    /* Border Colors */
+    --color-border-default: rgba(59, 130, 246, 0.3);
+    --color-border-hover: #3b82f6;
+    --color-border-muted: rgba(148, 163, 184, 0.2);
+
+    /* Semantic Colors */
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+    --color-info: #3b82f6;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.25);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.3);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.35);
+    --shadow-glow: 0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+/* ===== LIGHT THEME ===== */
+[data-theme="light"] {
+    --color-primary-dark: #f8fafc;
+    --color-secondary-dark: #f1f5f9;
+    --color-tertiary-dark: #e2e8f0;
+
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #334155;
+    --color-text-muted: #64748b;
+    --color-text-dark: #0f172a;
+
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f8fafc;
+    --color-bg-tertiary: #f1f5f9;
+    --color-bg-card: rgba(255, 255, 255, 0.95);
+    --color-bg-glass: rgba(255, 255, 255, 0.98);
+    --color-bg-overlay: rgba(0, 0, 0, 0.3);
+
+    --color-border-default: rgba(59, 130, 246, 0.2);
+    --color-border-muted: rgba(148, 163, 184, 0.3);
+
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.12);
+    --shadow-glow: 0 0 30px rgba(59, 130, 246, 0.15);
+}
+
+/* ===== SMOOTH GLOBAL TRANSITIONS ===== */
+
+/* Enable GPU acceleration */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Apply smooth transitions to theme-aware elements */
+body,
+.navbar,
+.main-navbar,
+.top-bar,
+.card,
+.btn,
+.footer,
+.section,
+.hero {
+    transition: background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===== OPTIMIZED TRANSITIONS ===== */
+
+/* Use transform and opacity for smooth animations (GPU accelerated) */
+.smooth-hover {
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.25s ease;
+    will-change: transform, opacity;
+}
+
+.smooth-hover:hover {
+    transform: translateY(-5px);
+}
+
+/* Cards - optimized hover */
+.card {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+    will-change: transform;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-glow);
+}
+
+/* Buttons - optimized hover */
+.btn {
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+    will-change: transform;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Links - smooth underline */
+a {
+    transition: color 0.2s ease;
+}
+
+/* Images - smooth loading */
+img {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+img[loading="lazy"] {
+    opacity: 0;
+}
+
+img[loading="lazy"].loaded,
+img:not([loading="lazy"]) {
+    opacity: 1;
+}
+
+/* ===== THEME TOGGLE BUTTON ===== */
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 0.5rem;
+    color: var(--color-accent-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.theme-toggle:hover {
+    background: rgba(59, 130, 246, 0.2);
+    transform: rotate(15deg);
+}
+
+.theme-toggle .icon-sun,
+.theme-toggle .icon-moon {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Dark mode: show sun icon */
+.theme-toggle .icon-sun {
+    display: block;
+}
+
+.theme-toggle .icon-moon {
+    display: none;
+}
+
+/* Light mode: show moon icon */
+[data-theme="light"] .theme-toggle .icon-sun {
+    display: none;
+}
+
+[data-theme="light"] .theme-toggle .icon-moon {
+    display: block;
+}
+
+/* ===== LIGHT THEME SPECIFIC OVERRIDES ===== */
+
+[data-theme="light"] body {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: var(--color-text-primary);
+}
+
+[data-theme="light"] .main-navbar {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .top-bar {
+    background: linear-gradient(135deg, #e2e8f0, #f1f5f9);
+}
+
+[data-theme="light"] .nav-link {
+    color: #334155;
+}
+
+[data-theme="light"] .nav-link:hover,
+[data-theme="light"] .nav-link.active {
+    color: #3b82f6;
+    background: rgba(59, 130, 246, 0.1);
+}
+
+[data-theme="light"] .dropdown-menu {
+    background: #ffffff;
+    border-color: rgba(59, 130, 246, 0.2);
+}
+
+[data-theme="light"] .dropdown-item {
+    color: #334155;
+}
+
+[data-theme="light"] .dropdown-item:hover {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+}
+
+[data-theme="light"] .card {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(59, 130, 246, 0.15);
+}
+
+[data-theme="light"] .card-title {
+    color: #0f172a;
+}
+
+[data-theme="light"] .card-text,
+[data-theme="light"] .card li {
+    color: #475569;
+}
+
+[data-theme="light"] .section-title {
+    color: #0f172a;
+}
+
+[data-theme="light"] .section-subtitle {
+    color: #64748b;
+}
+
+[data-theme="light"] .footer {
+    background: linear-gradient(180deg, #1e293b, #0f172a);
+}
+
+[data-theme="light"] input,
+[data-theme="light"] select,
+[data-theme="light"] textarea {
+    background: #ffffff;
+    border-color: #cbd5e1;
+    color: #0f172a;
+}
+
+[data-theme="light"] input:focus,
+[data-theme="light"] select:focus,
+[data-theme="light"] textarea:focus {
+    border-color: #3b82f6;
+}
+
+[data-theme="light"] select option {
+    background: #ffffff;
+    color: #0f172a;
+}
+
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+
+/* Contain paint for better performance */
+.card,
+.section,
+.hero {
+    contain: layout style;
+}
+
+/* Optimize will-change usage */
+.navbar-nav-wrapper,
+.dropdown-menu {
+    will-change: opacity, visibility;
+}
+
+/* Smooth image hover zoom */
+.card-img-wrapper img {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-img-wrapper:hover img {
+    transform: scale(1.05);
+}

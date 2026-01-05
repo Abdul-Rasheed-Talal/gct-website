@@ -135,6 +135,12 @@ class Header {
                             ${this.renderNavItems()}
                         </ul>
                         
+                        <!-- Theme Toggle -->
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                            <i class="fas fa-sun icon-sun"></i>
+                            <i class="fas fa-moon icon-moon"></i>
+                        </button>
+                        
                         <!-- CTA Button -->
                         <div class="navbar-cta">
                             <a href="${this.basePath}pages/admissions.html" class="btn">Apply Now</a>

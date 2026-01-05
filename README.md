@@ -124,11 +124,12 @@ Alternatively, you can open `index.html` directly in your browser.
 
 | Name | Role | Contributions |
 |------|------|---------------|
-| **Abdul Rasheed** | Project Lead | Header/Footer components, Index page, Overall architecture |
-| **Ali Raza** | Developer | Departments section |
-| **Imran** | Developer | Why Choose Us section |
-| **Naseer Nawaz** | Developer | Campus Life section |
-| **Hammad Ali** | Developer | Footer design |
+| **Abdul Rasheed** | Project Lead | Home page and Overall architecture |
+| **Ali Raza** | Developer | Programs page > find issues and look for improvements |
+| **Imran** | Developer |  About page > find issues and look for improvements |
+| **Taimoor** | Developer | Admissions page  > find issues and look for improvements |
+| **Abdul Saboor** | Developer | Contact page > find issues and look for improvements |
+| **Mudassir** | Developer | Campus Life page > find issues and look for improvements |
 
 ## 🎨 Design System
 

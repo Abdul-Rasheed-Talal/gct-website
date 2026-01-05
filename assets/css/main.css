@@ -8,6 +8,7 @@
 
 /* ===== BASE ===== */
 @import url('./base/variables.css');
+@import url('./base/theme.css');
 @import url('./base/reset.css');
 @import url('./base/typography.css');
 
