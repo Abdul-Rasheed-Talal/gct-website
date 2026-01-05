@@ -62,8 +62,12 @@
 
 .navbar-nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: var(--space-2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item {
@@ -213,11 +217,12 @@
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* ===== MOBILE MENU ===== */
+/* ===== DESKTOP MENU ===== */
 
 .navbar-collapse {
     display: flex;
     align-items: center;
+    gap: var(--space-2);
 }
 
 /* ===== RESPONSIVE ===== */

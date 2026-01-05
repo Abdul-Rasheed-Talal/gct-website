@@ -68,6 +68,16 @@
     margin-bottom: var(--space-4);
 }
 
+/* Card list items */
+.card li {
+    color: #e2e8f0;
+    font-size: var(--text-base);
+}
+
+.card ul {
+    color: #ffffff;
+}
+
 /* ===== CARD HEADER/FOOTER ===== */
 
 .card-header {
