@@ -281,10 +281,14 @@ img:not([loading="lazy"]) {
     background: #3b82f6 !important;
 }
 
-/* ----- Hero Section ----- */
+/* ----- Hero Section & Backgrounds ----- */
 [data-theme="light"] .hero-section,
 [data-theme="light"] .hero {
-    background: linear-gradient(135deg, #e2e8f0, #cbd5e1) !important;
+    background: linear-gradient(135deg, #dbeafe, #e0e7ff) !important;
+}
+
+[data-theme="light"] .hero-bg-gradient {
+    background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 50%, #c7d2fe 100%) !important;
 }
 
 [data-theme="light"] .hero-page {
@@ -292,16 +296,29 @@ img:not([loading="lazy"]) {
 }
 
 [data-theme="light"] .hero-title {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] .hero-page .hero-title {
     color: #ffffff !important;
 }
 
 [data-theme="light"] .hero-subtitle {
+    color: #475569 !important;
+}
+
+[data-theme="light"] .hero-page .hero-subtitle {
     color: rgba(255, 255, 255, 0.9) !important;
 }
 
 [data-theme="light"] .hero-section .carousel-caption h1,
 [data-theme="light"] .hero-section .carousel-caption p {
     color: #ffffff !important;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="light"] .transparent-slide {
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 /* ----- Sections ----- */
@@ -309,9 +326,16 @@ img:not([loading="lazy"]) {
     background: #ffffff !important;
 }
 
-[data-theme="light"] .section-darker,
-[data-theme="light"] .section-gradient {
+[data-theme="light"] .section-darker {
     background: #f1f5f9 !important;
+}
+
+[data-theme="light"] .section-gradient {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #dbeafe 100%) !important;
+}
+
+[data-theme="light"] .section-dark {
+    background: #f8fafc !important;
 }
 
 [data-theme="light"] .section-title {
@@ -327,34 +351,40 @@ img:not([loading="lazy"]) {
 }
 
 [data-theme="light"] .section-cta .section-title,
-[data-theme="light"] .section-cta .section-subtitle {
+[data-theme="light"] .section-cta .section-subtitle,
+[data-theme="light"] .section-cta p {
     color: #ffffff !important;
 }
 
 /* ----- Cards ----- */
 [data-theme="light"] .card {
     background: #ffffff !important;
-    border-color: rgba(100, 116, 139, 0.15) !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+    border-color: rgba(100, 116, 139, 0.2) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
 }
 
 [data-theme="light"] .card:hover {
-    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15) !important;
+    box-shadow: 0 12px 35px rgba(59, 130, 246, 0.15) !important;
+    border-color: #3b82f6 !important;
 }
 
 [data-theme="light"] .card-glass {
-    background: rgba(255, 255, 255, 0.9) !important;
+    background: rgba(255, 255, 255, 0.95) !important;
     border-color: rgba(100, 116, 139, 0.2) !important;
 }
 
 [data-theme="light"] .card-title,
+[data-theme="light"] .card h3,
 [data-theme="light"] .card h4,
 [data-theme="light"] .card h5 {
     color: #0f172a !important;
 }
 
 [data-theme="light"] .card-text,
-[data-theme="light"] .card p,
+[data-theme="light"] .card p {
+    color: #475569 !important;
+}
+
 [data-theme="light"] .card li {
     color: #475569 !important;
 }
@@ -367,9 +397,13 @@ img:not([loading="lazy"]) {
     color: #64748b !important;
 }
 
-/* ----- Text & Headings ----- */
-[data-theme="light"] h1,
-[data-theme="light"] h2,
+[data-theme="light"] .card-stat-number {
+    color: #3b82f6 !important;
+}
+
+/* ----- All Text Elements ----- */
+[data-theme="light"] h1:not(.hero-title):not(.carousel-caption h1),
+[data-theme="light"] h2:not(.section-cta h2),
 [data-theme="light"] h3,
 [data-theme="light"] h4,
 [data-theme="light"] h5,
@@ -377,7 +411,7 @@ img:not([loading="lazy"]) {
     color: #0f172a !important;
 }
 
-[data-theme="light"] p {
+[data-theme="light"] p:not(.hero-subtitle):not(.section-cta p):not(.card-text) {
     color: #475569 !important;
 }
 
@@ -390,6 +424,15 @@ img:not([loading="lazy"]) {
 }
 
 [data-theme="light"] .text-accent {
+    color: #3b82f6 !important;
+}
+
+[data-theme="light"] .text-primary {
+    color: #3b82f6 !important;
+}
+
+[data-theme="light"] .accent,
+[data-theme="light"] .highlight {
     color: #3b82f6 !important;
 }
 
@@ -452,6 +495,12 @@ img:not([loading="lazy"]) {
 }
 
 /* ----- Two Column Layout ----- */
+[data-theme="light"] .two-col h2,
+[data-theme="light"] .two-col h3,
+[data-theme="light"] .two-col h4 {
+    color: #0f172a !important;
+}
+
 [data-theme="light"] .two-col p,
 [data-theme="light"] .two-col li {
     color: #475569 !important;
@@ -479,8 +528,7 @@ img:not([loading="lazy"]) {
 }
 
 /* ----- Stats ----- */
-[data-theme="light"] .stat-number,
-[data-theme="light"] .card-stat-number {
+[data-theme="light"] .stat-number {
     color: #3b82f6 !important;
 }
 
@@ -488,24 +536,24 @@ img:not([loading="lazy"]) {
     color: #64748b !important;
 }
 
-/* ----- Icons in Cards ----- */
-[data-theme="light"] .card-feature-icon {
-    color: #ffffff !important;
-}
-
 /* ----- Lists ----- */
-[data-theme="light"] ul li,
+[data-theme="light"] ul:not(.navbar-nav):not(.dropdown-menu) li,
 [data-theme="light"] ol li {
     color: #475569 !important;
 }
 
 /* ----- Links ----- */
-[data-theme="light"] a:not(.btn):not(.nav-link):not(.dropdown-item):not(.navbar-brand):not(.breadcrumb-link) {
+[data-theme="light"] a:not(.btn):not(.nav-link):not(.dropdown-item):not(.navbar-brand):not(.breadcrumb-link):not(.card a) {
     color: #3b82f6 !important;
 }
 
-[data-theme="light"] a:not(.btn):not(.nav-link):not(.dropdown-item):not(.navbar-brand):not(.breadcrumb-link):hover {
+[data-theme="light"] a:not(.btn):hover {
     color: #2563eb !important;
+}
+
+/* ----- Feature Icon Cards ----- */
+[data-theme="light"] .card-feature-icon {
+    color: #ffffff !important;
 }
 
 /* ----- Back to Top ----- */
@@ -531,16 +579,6 @@ img:not([loading="lazy"]) {
 [data-theme="light"] td {
     border-color: #e2e8f0 !important;
     color: #334155 !important;
-}
-
-/* ----- Misc ----- */
-[data-theme="light"] .accent,
-[data-theme="light"] .highlight {
-    color: #3b82f6 !important;
-}
-
-[data-theme="light"] .transparent-slide {
-    background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 /* ===== PERFORMANCE OPTIMIZATIONS ===== */
