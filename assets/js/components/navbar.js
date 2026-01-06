@@ -131,6 +131,10 @@ class Header {
                     
                     <!-- Navigation Wrapper -->
                     <div class="navbar-nav-wrapper" id="navbarNavWrapper">
+                        <!-- Mobile Close Button -->
+                        <button class="navbar-close" id="navbarClose" aria-label="Close menu">
+                            <i class="fas fa-times"></i>
+                        </button>
                         <ul class="navbar-nav">
                             ${this.renderNavItems()}
                         </ul>
@@ -155,6 +159,15 @@ class Header {
         const toggle = document.getElementById('navbarToggle');
         const navWrapper = document.getElementById('navbarNavWrapper');
         const overlay = document.getElementById('navbarOverlay');
+        const closeBtn = document.getElementById('navbarClose');
+
+        // Helper function to close mobile menu
+        const closeMobileMenu = () => {
+            toggle?.classList.remove('active');
+            navWrapper?.classList.remove('show');
+            overlay?.classList.remove('show');
+            document.body.style.overflow = '';
+        };
 
         // Mobile toggle
         if (toggle && navWrapper) {
@@ -164,6 +177,11 @@ class Header {
                 overlay?.classList.toggle('show');
                 document.body.style.overflow = navWrapper.classList.contains('show') ? 'hidden' : '';
             });
+        }
+
+        // Mobile close button
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeMobileMenu);
         }
 
         // Close on overlay click

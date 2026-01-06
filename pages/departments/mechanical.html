@@ -109,47 +109,256 @@
             </div>
         </section>
 
+        <!-- Curriculum Section -->
         <section id="curriculum" class="section">
             <div class="container">
                 <div class="section-header" data-animate="fadeInUp">
-                    <h2 class="section-title">Curriculum Overview</h2>
+                    <h2 class="section-title">Complete Curriculum</h2>
+                    <p class="section-subtitle">Comprehensive 3-year DAE program as per PBTE standards</p>
                 </div>
-                <div class="grid grid-3" style="gap: 2rem;">
-                    <div class="card" style="padding: 2rem;" data-animate="fadeInUp">
-                        <h4 class="text-accent mb-4"><i class="fas fa-book-open me-2"></i>First Year</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Applied Mathematics
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Applied Physics</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Engineering Drawing
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Workshop Technology
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Basic Mechanics</li>
-                        </ul>
+
+                <!-- Curriculum Navigation Tabs -->
+                <div class="curriculum-tabs" data-animate="fadeInUp">
+                    <button class="curriculum-tab active" data-year="1">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>First Year</span>
+                    </button>
+                    <button class="curriculum-tab" data-year="2">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Second Year</span>
+                    </button>
+                    <button class="curriculum-tab" data-year="3">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Third Year</span>
+                    </button>
+                </div>
+
+                <!-- Year 1 Content -->
+                <div class="curriculum-content active" data-year-content="1" data-animate="fadeInUp">
+                    <div class="curriculum-year-header">
+                        <div class="year-badge">Year 1</div>
+                        <h3>Foundation Studies</h3>
+                        <p>Building strong fundamentals in mechanical engineering principles</p>
                     </div>
-                    <div class="card" style="padding: 2rem;" data-animate="fadeInUp" data-delay="100">
-                        <h4 class="text-accent mb-4"><i class="fas fa-book-open me-2"></i>Second Year</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Machine Design</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Thermodynamics</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Fluid Mechanics</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Manufacturing Processes
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>CAD Fundamentals</li>
-                        </ul>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h4>General Studies</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">GEN 111</span>
+                                    <span class="subject-name">Islamiat & Pak Studies</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ENG 112</span>
+                                    <span class="subject-name">Technical English</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MATH 113</span>
+                                    <span class="subject-name">Applied Mathematics-I</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">PHY 122</span>
+                                    <span class="subject-name">Applied Physics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CH 112</span>
+                                    <span class="subject-name">Applied Chemistry</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">COMP 152</span>
+                                    <span class="subject-name">Computer Application</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-cogs"></i>
+                                <h4>Technical Subjects</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">MECH 127</span>
+                                    <span class="subject-name">Workshop Practice-I</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 151</span>
+                                    <span class="subject-name">Occupational Health Safety & Environment</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 173</span>
+                                    <span class="subject-name">Engineering Drawing and Graphics</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="card" style="padding: 2rem;" data-animate="fadeInUp" data-delay="200">
-                        <h4 class="text-accent mb-4"><i class="fas fa-book-open me-2"></i>Third Year</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>CNC Programming</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Production Management
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Quality Control</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Project Work</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Industrial Training
-                            </li>
-                        </ul>
+                </div>
+
+                <!-- Year 2 Content -->
+                <div class="curriculum-content" data-year-content="2">
+                    <div class="curriculum-year-header">
+                        <div class="year-badge">Year 2</div>
+                        <h3>Core Mechanical Engineering</h3>
+                        <p>Advanced mechanical concepts and design applications</p>
+                    </div>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h4>General Studies</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">GEN 201</span>
+                                    <span class="subject-name">Islamiat & Pak Studies</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MATH 212</span>
+                                    <span class="subject-name">Applied Mathematics-II</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MGM 201</span>
+                                    <span class="subject-name">Communication Skills & Report Writing</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MGM 221</span>
+                                    <span class="subject-name">Business Management & Industrial Economics</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-cogs"></i>
+                                <h4>Technical Subjects</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">PHY 212</span>
+                                    <span class="subject-name">Applied Mechanics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELECT 212</span>
+                                    <span class="subject-name">Applied Electricity and Electronics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 233</span>
+                                    <span class="subject-name">Computer Aided Design (CAD)</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 246</span>
+                                    <span class="subject-name">Workshop Practice-II</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 262</span>
+                                    <span class="subject-name">Metallurgy</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 272</span>
+                                    <span class="subject-name">Metrology</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Year 3 Content -->
+                <div class="curriculum-content" data-year-content="3">
+                    <div class="curriculum-year-header">
+                        <div class="year-badge">Year 3</div>
+                        <h3>Specialization & Industry Readiness</h3>
+                        <p>Advanced manufacturing and professional development</p>
+                    </div>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h4>General Studies</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">GEN 301</span>
+                                    <span class="subject-name">Islamiat & Pak Studies</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">IMH 301</span>
+                                    <span class="subject-name">Industrial Management and Human Relations</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-cogs"></i>
+                                <h4>Technical Subjects</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">MECH 302</span>
+                                    <span class="subject-name">Fluid Mechanics and Hydraulic Machines</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 313</span>
+                                    <span class="subject-name">Applied Thermodynamics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 321</span>
+                                    <span class="subject-name">Industrial Planning and Protection Methods</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 333</span>
+                                    <span class="subject-name">Machine Design & Analysis</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 363</span>
+                                    <span class="subject-name">Tools & Mould Design</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 332</span>
+                                    <span class="subject-name">Materials Testing and Heat Treatment</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 352</span>
+                                    <span class="subject-name">CAD/CAM</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MECH 372</span>
+                                    <span class="subject-name">CNC Machines</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program Highlights -->
+                <div class="program-highlights" data-animate="fadeInUp">
+                    <div class="highlight-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h5>Duration</h5>
+                            <p>3 Years (6 Semesters)</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-percentage"></i>
+                        <div>
+                            <h5>Practical Work</h5>
+                            <p>60% Hands-on Training</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h5>Certification</h5>
+                            <p>PBTE Recognized Diploma</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-industry"></i>
+                        <div>
+                            <h5>Industrial Training</h5>
+                            <p>Mandatory Internship</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,6 +385,55 @@
                     <div class="card card-feature card-glass" data-animate="fadeInUp" data-delay="300">
                         <div class="card-feature-icon"><i class="fas fa-clipboard-check"></i></div>
                         <h5 class="card-title">Production Manager</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Faculty Section -->
+        <section class="staff-section">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 class="section-title">Meet Our Faculty</h2>
+                    <p class="section-subtitle">Skilled engineers shaping the next generation of mechanical
+                        professionals</p>
+                </div>
+
+                <div class="staff-grid">
+                    <!-- HOD -->
+                    <div class="staff-card" data-animate="fadeInUp">
+                        <span class="staff-badge">Head of Department</span>
+                        <div class="staff-avatar">MS</div>
+                        <h4 class="staff-name">Muhammad Safdar</h4>
+                        <p class="staff-position">Head of Department</p>
+                    </div>
+
+                    <!-- Instructor 1 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="100">
+                        <div class="staff-avatar">AR</div>
+                        <h4 class="staff-name">Allah Rakkha</h4>
+                        <p class="staff-position">Instructor</p>
+                    </div>
+
+                    <!-- Instructor 2 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="200">
+                        <div class="staff-avatar">MM</div>
+                        <h4 class="staff-name">Maqsood Mehmood</h4>
+                        <p class="staff-position">Instructor</p>
+                    </div>
+
+                    <!-- Instructor 3 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="300">
+                        <div class="staff-avatar">MF</div>
+                        <h4 class="staff-name">Muhammad Farman</h4>
+                        <p class="staff-position">Instructor</p>
+                    </div>
+
+                    <!-- Instructor 4 -->
+                    <div class="staff-card" data-animate="fadeInUp">
+                        <div class="staff-avatar">MI</div>
+                        <h4 class="staff-name">Muhammad Ismail</h4>
+                        <p class="staff-position">Instructor</p>
                     </div>
                 </div>
             </div>

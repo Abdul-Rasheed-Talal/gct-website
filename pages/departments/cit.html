@@ -170,56 +170,256 @@
         <section id="curriculum" class="section">
             <div class="container">
                 <div class="section-header" data-animate="fadeInUp">
-                    <h2 class="section-title">Curriculum Overview</h2>
-                    <p class="section-subtitle">Year-wise course distribution</p>
+                    <h2 class="section-title">Complete Curriculum</h2>
+                    <p class="section-subtitle">Comprehensive 3-year DAE program as per PBTE standards</p>
                 </div>
 
-                <div class="grid grid-3" style="gap: 2rem;">
-                    <div class="card" style="padding: 2rem;" data-animate="fadeInUp">
-                        <h4 class="text-accent mb-4"><i class="fas fa-book-open me-2"></i>First Year</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Applied Mathematics-I
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Applied Physics</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Computer Fundamentals
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Programming in C</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Digital Logic Design
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>English Communication
-                            </li>
-                        </ul>
-                    </div>
+                <!-- Curriculum Navigation Tabs -->
+                <div class="curriculum-tabs" data-animate="fadeInUp">
+                    <button class="curriculum-tab active" data-year="1">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>First Year</span>
+                    </button>
+                    <button class="curriculum-tab" data-year="2">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Second Year</span>
+                    </button>
+                    <button class="curriculum-tab" data-year="3">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Third Year</span>
+                    </button>
+                </div>
 
-                    <div class="card" style="padding: 2rem;" data-animate="fadeInUp" data-delay="100">
-                        <h4 class="text-accent mb-4"><i class="fas fa-book-open me-2"></i>Second Year</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Applied Mathematics-II
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Object Oriented
-                                Programming</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Database Management
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Computer Networks</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Web Development</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Operating Systems</li>
-                        </ul>
+                <!-- Year 1 Content -->
+                <div class="curriculum-content active" data-year-content="1" data-animate="fadeInUp">
+                    <div class="curriculum-year-header">
+                        <div class="year-badge">Year 1</div>
+                        <h3>Foundation Studies</h3>
+                        <p>Building strong fundamentals in computer science and programming</p>
                     </div>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h4>General Studies</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">GEN 111</span>
+                                    <span class="subject-name">Islamiat & Pak Studies</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">TTQ-111</span>
+                                    <span class="subject-name">Tarjumat-ul-Quran</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">Eng-112</span>
+                                    <span class="subject-name">English</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">Math-123</span>
+                                    <span class="subject-name">Applied Mathematics-I</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">Phy-132</span>
+                                    <span class="subject-name">Applied Physics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">Ch-132</span>
+                                    <span class="subject-name">Applied Chemistry</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-laptop-code"></i>
+                                <h4>Technical Subjects</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">CIT-101</span>
+                                    <span class="subject-name">Occupational Health Safety & Environment</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-103</span>
+                                    <span class="subject-name">Introduction to Computing & Application Software</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-124</span>
+                                    <span class="subject-name">Basic Electronics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-114</span>
+                                    <span class="subject-name">Introduction to Computer Programming</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-141</span>
+                                    <span class="subject-name">Computer & Peripheral Maintenance</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="card" style="padding: 2rem;" data-animate="fadeInUp" data-delay="200">
-                        <h4 class="text-accent mb-4"><i class="fas fa-book-open me-2"></i>Third Year</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Software Engineering
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Web Programming</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Network Administration
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Mobile App Development
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Final Year Project</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Industrial Training
-                            </li>
-                        </ul>
+                <!-- Year 2 Content -->
+                <div class="curriculum-content" data-year-content="2">
+                    <div class="curriculum-year-header">
+                        <div class="year-badge">Year 2</div>
+                        <h3>Core Development Skills</h3>
+                        <p>Advanced programming, databases, networking, and web development</p>
+                    </div>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h4>General Studies</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">Gen-201</span>
+                                    <span class="subject-name">Islamiat & Pak Studies</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">TTQ-211</span>
+                                    <span class="subject-name">Tarjumat-ul-Quran / Civics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">Math-233</span>
+                                    <span class="subject-name">Applied Mathematics-II</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">Mgm-211</span>
+                                    <span class="subject-name">Business Communication</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-laptop-code"></i>
+                                <h4>Technical Subjects</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">CIT-203</span>
+                                    <span class="subject-name">Data Communication & Computer Networks</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-273</span>
+                                    <span class="subject-name">Digital Logic Design</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-222</span>
+                                    <span class="subject-name">Operating System</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-283</span>
+                                    <span class="subject-name">Database Management System</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-293</span>
+                                    <span class="subject-name">Computer Graphics Designing</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-204</span>
+                                    <span class="subject-name">Web Development</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Year 3 Content -->
+                <div class="curriculum-content" data-year-content="3">
+                    <div class="curriculum-year-header">
+                        <div class="year-badge">Year 3</div>
+                        <h3>Specialization & Industry Readiness</h3>
+                        <p>Mobile apps, IoT, UI/UX design, and professional project development</p>
+                    </div>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h4>General Studies</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">GEN 301</span>
+                                    <span class="subject-name">Islamiat & Pak Studies</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-322</span>
+                                    <span class="subject-name">Entrepreneurship & Freelancing</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-laptop-code"></i>
+                                <h4>Technical Subjects</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">CIT-312</span>
+                                    <span class="subject-name">Internet of Things</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-313</span>
+                                    <span class="subject-name">Network and Server Administration</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-314</span>
+                                    <span class="subject-name">Mobile Applications Development</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-343</span>
+                                    <span class="subject-name">Microprocessor Fundamentals</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-372</span>
+                                    <span class="subject-name">UI / UX Design</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-381</span>
+                                    <span class="subject-name">Software Quality Assurance</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIT-392</span>
+                                    <span class="subject-name">Project</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program Highlights -->
+                <div class="program-highlights" data-animate="fadeInUp">
+                    <div class="highlight-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h5>Duration</h5>
+                            <p>3 Years (6 Semesters)</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-percentage"></i>
+                        <div>
+                            <h5>Practical Work</h5>
+                            <p>60% Hands-on Training</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h5>Certification</h5>
+                            <p>PBTE Recognized Diploma</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-industry"></i>
+                        <div>
+                            <h5>Industrial Training</h5>
+                            <p>Mandatory Internship</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -264,6 +464,83 @@
                         </div>
                         <h5 class="card-title">Web Developer</h5>
                         <p class="card-text">Create websites and web applications</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Faculty Section -->
+        <section class="staff-section">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 class="section-title">Meet Our Faculty</h2>
+                    <p class="section-subtitle">Dedicated professionals shaping the future of technology education</p>
+                </div>
+
+                <div class="staff-grid">
+                    <!-- HOD -->
+                    <div class="staff-card" data-animate="fadeInUp">
+                        <span class="staff-badge">Head of Department</span>
+                        <div class="staff-avatar">RH</div>
+                        <h4 class="staff-name">Rao Muhammad Haziq</h4>
+                        <p class="staff-position">Head of Department</p>
+                        <p class="staff-qualification">MS Computer Science</p>
+                    </div>
+
+                    <!-- Junior Instructor -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="100">
+                        <div class="staff-avatar">IA</div>
+                        <h4 class="staff-name">Ijaz Ahmad</h4>
+                        <p class="staff-position">Junior Instructor</p>
+                        <p class="staff-qualification">MS Computer Science</p>
+                    </div>
+
+                    <!-- Electrical Engineer 1 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="200">
+                        <div class="staff-avatar">MU</div>
+                        <h4 class="staff-name">Mirza Muhammad Ubaid</h4>
+                        <p class="staff-position">Electrical Engineer</p>
+                        <p class="staff-qualification">Computer Science</p>
+                    </div>
+
+                    <!-- Electrical Engineer 2 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="300">
+                        <div class="staff-avatar">MN</div>
+                        <h4 class="staff-name">Muhammad Naveed Iqbal</h4>
+                        <p class="staff-position">Electrical Engineer</p>
+                        <p class="staff-qualification">PhD in Electrical</p>
+                    </div>
+
+                    <!-- Electrical Engineer 3 -->
+                    <div class="staff-card" data-animate="fadeInUp">
+                        <div class="staff-avatar">SH</div>
+                        <h4 class="staff-name">Shah Hussain Shah</h4>
+                        <p class="staff-position">Electrical Engineer</p>
+                        <p class="staff-qualification">M.Phil Physics</p>
+                    </div>
+
+                    <!-- Lecturer 1 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="100">
+                        <div class="staff-avatar">MM</div>
+                        <h4 class="staff-name">Mohib Mehdi</h4>
+                        <p class="staff-position">Lecturer</p>
+                        <p class="staff-qualification">M.Phil Islamiat</p>
+                    </div>
+
+                    <!-- Lecturer 2 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="200">
+                        <div class="staff-avatar">JA</div>
+                        <h4 class="staff-name">John Abbass</h4>
+                        <p class="staff-position">Lecturer</p>
+                        <p class="staff-qualification">M.Phil English</p>
+                    </div>
+
+                    <!-- Lecturer 3 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="300">
+                        <div class="staff-avatar">MT</div>
+                        <h4 class="staff-name">M Tahir Ali</h4>
+                        <p class="staff-position">Lecturer</p>
+                        <p class="staff-qualification">M.Phil Computer Science</p>
                     </div>
                 </div>
             </div>

@@ -110,47 +110,256 @@
             </div>
         </section>
 
+        <!-- Curriculum Section -->
         <section id="curriculum" class="section">
             <div class="container">
                 <div class="section-header" data-animate="fadeInUp">
-                    <h2 class="section-title">Curriculum Overview</h2>
+                    <h2 class="section-title">Complete Curriculum</h2>
+                    <p class="section-subtitle">Comprehensive 3-year DAE program as per PBTE standards</p>
                 </div>
-                <div class="grid grid-3" style="gap: 2rem;">
-                    <div class="card" style="padding: 2rem;" data-animate="fadeInUp">
-                        <h4 class="text-accent mb-4"><i class="fas fa-book-open me-2"></i>First Year</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Applied Mathematics
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Applied Physics</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Basic Electronics</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Electronic Components
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Circuit Analysis</li>
-                        </ul>
+
+                <!-- Curriculum Navigation Tabs -->
+                <div class="curriculum-tabs" data-animate="fadeInUp">
+                    <button class="curriculum-tab active" data-year="1">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>First Year</span>
+                    </button>
+                    <button class="curriculum-tab" data-year="2">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Second Year</span>
+                    </button>
+                    <button class="curriculum-tab" data-year="3">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Third Year</span>
+                    </button>
+                </div>
+
+                <!-- Year 1 Content -->
+                <div class="curriculum-content active" data-year-content="1" data-animate="fadeInUp">
+                    <div class="curriculum-year-header">
+                        <div class="year-badge">Year 1</div>
+                        <h3>Foundation Studies</h3>
+                        <p>Building strong fundamentals in electronics engineering principles</p>
                     </div>
-                    <div class="card" style="padding: 2rem;" data-animate="fadeInUp" data-delay="100">
-                        <h4 class="text-accent mb-4"><i class="fas fa-book-open me-2"></i>Second Year</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Digital Electronics
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Microprocessors</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Communication Systems
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Industrial Electronics
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>PCB Design</li>
-                        </ul>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h4>General Studies</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">GEN 111</span>
+                                    <span class="subject-name">Islamiat & Pak Studies</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ENG 112</span>
+                                    <span class="subject-name">Technical English</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MATH 123</span>
+                                    <span class="subject-name">Applied Mathematics-I</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">PHY 112</span>
+                                    <span class="subject-name">Applied Physics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CH 112</span>
+                                    <span class="subject-name">Applied Chemistry</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">COMP 112</span>
+                                    <span class="subject-name">Computer Fundamentals</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-microchip"></i>
+                                <h4>Technical Subjects</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">ELTR 114</span>
+                                    <span class="subject-name">Electrical Circuits</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 123</span>
+                                    <span class="subject-name">Electrical Devices</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 132</span>
+                                    <span class="subject-name">Engineering Drawing & CAD</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 141</span>
+                                    <span class="subject-name">Electrical Wiring</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="card" style="padding: 2rem;" data-animate="fadeInUp" data-delay="200">
-                        <h4 class="text-accent mb-4"><i class="fas fa-book-open me-2"></i>Third Year</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Microcontrollers</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Embedded Systems</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Telecommunications</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Project Work</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Industrial Training
-                            </li>
-                        </ul>
+                </div>
+
+                <!-- Year 2 Content -->
+                <div class="curriculum-content" data-year-content="2">
+                    <div class="curriculum-year-header">
+                        <div class="year-badge">Year 2</div>
+                        <h3>Core Electronics Engineering</h3>
+                        <p>Advanced electronics concepts and communication systems</p>
+                    </div>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h4>General Studies</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">GEN 211</span>
+                                    <span class="subject-name">Islamiat & Pak Studies</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MATH 213</span>
+                                    <span class="subject-name">Applied Mathematics-II</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">COMS 211</span>
+                                    <span class="subject-name">Communication Skills</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-microchip"></i>
+                                <h4>Technical Subjects</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">ELTR 212</span>
+                                    <span class="subject-name">Propagation of Electromagnetic Waves</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 225</span>
+                                    <span class="subject-name">Analog Electronics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 233</span>
+                                    <span class="subject-name">Electrical Instruments & Measurements</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 243</span>
+                                    <span class="subject-name">Electrical Machines</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 253</span>
+                                    <span class="subject-name">Communication System</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 264</span>
+                                    <span class="subject-name">Digital Electronics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 271</span>
+                                    <span class="subject-name">PCB Fabrication</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Year 3 Content -->
+                <div class="curriculum-content" data-year-content="3">
+                    <div class="curriculum-year-header">
+                        <div class="year-badge">Year 3</div>
+                        <h3>Specialization & Industry Readiness</h3>
+                        <p>Microcontrollers, embedded systems and industrial applications</p>
+                    </div>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h4>General Studies</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">GEN 311</span>
+                                    <span class="subject-name">Islamiat & Pak Studies</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MGM 311</span>
+                                    <span class="subject-name">Industrial Management & Human Relations</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">OSHE 311</span>
+                                    <span class="subject-name">Occupational Safety, Health & Environment</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-microchip"></i>
+                                <h4>Technical Subjects</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">ELTR 314</span>
+                                    <span class="subject-name">Microprocessor & Application</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 322</span>
+                                    <span class="subject-name">Equipment Maintenance & Servicing</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 332</span>
+                                    <span class="subject-name">Project</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 343</span>
+                                    <span class="subject-name">Industrial Electronics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 353</span>
+                                    <span class="subject-name">Power Electronics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ELTR 363</span>
+                                    <span class="subject-name">Microcontroller Programming and Applications</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program Highlights -->
+                <div class="program-highlights" data-animate="fadeInUp">
+                    <div class="highlight-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h5>Duration</h5>
+                            <p>3 Years (6 Semesters)</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-percentage"></i>
+                        <div>
+                            <h5>Practical Work</h5>
+                            <p>60% Hands-on Training</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h5>Certification</h5>
+                            <p>PBTE Recognized Diploma</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-industry"></i>
+                        <div>
+                            <h5>Industrial Training</h5>
+                            <p>Mandatory Internship</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -177,6 +386,54 @@
                     <div class="card card-feature card-glass" data-animate="fadeInUp" data-delay="300">
                         <div class="card-feature-icon"><i class="fas fa-circuit-board"></i></div>
                         <h5 class="card-title">PCB Designer</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Faculty Section -->
+        <section class="staff-section">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 class="section-title">Meet Our Faculty</h2>
+                    <p class="section-subtitle">Expert professionals in electronics and embedded systems technology</p>
+                </div>
+
+                <div class="staff-grid">
+                    <!-- HOD -->
+                    <div class="staff-card" data-animate="fadeInUp">
+                        <span class="staff-badge">Head of Department</span>
+                        <div class="staff-avatar">MS</div>
+                        <h4 class="staff-name">Muhammad Shahazaib Sana</h4>
+                        <p class="staff-position">Head of Department</p>
+                    </div>
+
+                    <!-- Instructor 1 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="100">
+                        <div class="staff-avatar">IA</div>
+                        <h4 class="staff-name">Imran Abbas</h4>
+                        <p class="staff-position">Instructor</p>
+                    </div>
+
+                    <!-- Instructor 2 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="200">
+                        <div class="staff-avatar">NJ</div>
+                        <h4 class="staff-name">Nasrullah Jameel</h4>
+                        <p class="staff-position">Instructor</p>
+                    </div>
+
+                    <!-- Lab Technician 1 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="300">
+                        <div class="staff-avatar">MF</div>
+                        <h4 class="staff-name">Muhammad Furqan</h4>
+                        <p class="staff-position">Lab Technician</p>
+                    </div>
+
+                    <!-- Lab Technician 2 -->
+                    <div class="staff-card" data-animate="fadeInUp">
+                        <div class="staff-avatar">SA</div>
+                        <h4 class="staff-name">Shabbir Ahmad</h4>
+                        <p class="staff-position">Lab Technician</p>
                     </div>
                 </div>
             </div>

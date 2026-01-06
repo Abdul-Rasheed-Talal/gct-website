@@ -109,49 +109,252 @@
             </div>
         </section>
 
+        <!-- Curriculum Section -->
         <section id="curriculum" class="section">
             <div class="container">
                 <div class="section-header" data-animate="fadeInUp">
-                    <h2 class="section-title">Curriculum Overview</h2>
+                    <h2 class="section-title">Complete Curriculum</h2>
+                    <p class="section-subtitle">Comprehensive 3-year DAE program as per PBTE standards</p>
                 </div>
-                <div class="grid grid-3" style="gap: 2rem;">
-                    <div class="card" style="padding: 2rem;" data-animate="fadeInUp">
-                        <h4 class="text-accent mb-4"><i class="fas fa-book-open me-2"></i>First Year</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Applied Mathematics
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Applied Mechanics</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Engineering Drawing
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Building Materials</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Basic Surveying</li>
-                        </ul>
+
+                <!-- Curriculum Navigation Tabs -->
+                <div class="curriculum-tabs" data-animate="fadeInUp">
+                    <button class="curriculum-tab active" data-year="1">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>First Year</span>
+                    </button>
+                    <button class="curriculum-tab" data-year="2">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Second Year</span>
+                    </button>
+                    <button class="curriculum-tab" data-year="3">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Third Year</span>
+                    </button>
+                </div>
+
+                <!-- Year 1 Content -->
+                <div class="curriculum-content active" data-year-content="1" data-animate="fadeInUp">
+                    <div class="curriculum-year-header">
+                        <div class="year-badge">Year 1</div>
+                        <h3>Foundation Studies</h3>
+                        <p>Building strong fundamentals in civil engineering principles</p>
                     </div>
-                    <div class="card" style="padding: 2rem;" data-animate="fadeInUp" data-delay="100">
-                        <h4 class="text-accent mb-4"><i class="fas fa-book-open me-2"></i>Second Year</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Structural Analysis
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Advanced Surveying</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Concrete Technology
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Soil Mechanics</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Construction Methods
-                            </li>
-                        </ul>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h4>General Studies</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">GEN 111</span>
+                                    <span class="subject-name">Islamiat & Pak Studies</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">ENG 112</span>
+                                    <span class="subject-name">Technical English</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MATH 113</span>
+                                    <span class="subject-name">Applied Mathematics-I</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CH 112</span>
+                                    <span class="subject-name">Applied Chemistry</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">PHY 122</span>
+                                    <span class="subject-name">Applied Physics</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">COMP 121</span>
+                                    <span class="subject-name">Computer Applications</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-building"></i>
+                                <h4>Technical Subjects</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">CIVIL 114</span>
+                                    <span class="subject-name">Basic Civil Engineering Surveying</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 123</span>
+                                    <span class="subject-name">Engineering Materials & Construction</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 133</span>
+                                    <span class="subject-name">Basic Engineering Drawing</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">SHOP 112</span>
+                                    <span class="subject-name">Engineering Workshop Practice</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="card" style="padding: 2rem;" data-animate="fadeInUp" data-delay="200">
-                        <h4 class="text-accent mb-4"><i class="fas fa-book-open me-2"></i>Third Year</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Structural Design</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Estimation & Costing
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Transportation
-                                Engineering</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Project Work</li>
-                            <li class="mb-3"><i class="fas fa-check-circle text-accent me-2"></i>Industrial Training
-                            </li>
-                        </ul>
+                </div>
+
+                <!-- Year 2 Content -->
+                <div class="curriculum-content" data-year-content="2">
+                    <div class="curriculum-year-header">
+                        <div class="year-badge">Year 2</div>
+                        <h3>Core Civil Engineering</h3>
+                        <p>Advanced construction and structural concepts</p>
+                    </div>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h4>General Studies</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">GEN 211</span>
+                                    <span class="subject-name">Islamiat & Pak Studies</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">MATH 212</span>
+                                    <span class="subject-name">Applied Mathematics-II</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">GEN 222</span>
+                                    <span class="subject-name">Communication Skills & Report Writing</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-building"></i>
+                                <h4>Technical Subjects</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">CIVIL 213</span>
+                                    <span class="subject-name">Public Health Technology</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 224</span>
+                                    <span class="subject-name">Advanced Surveying</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 233</span>
+                                    <span class="subject-name">Building Construction</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 243</span>
+                                    <span class="subject-name">Civil Engineering Drawing & Auto CAD</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 253</span>
+                                    <span class="subject-name">Mechanics of Structures</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 262</span>
+                                    <span class="subject-name">Quantity Surveying</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Year 3 Content -->
+                <div class="curriculum-content" data-year-content="3">
+                    <div class="curriculum-year-header">
+                        <div class="year-badge">Year 3</div>
+                        <h3>Specialization & Industry Readiness</h3>
+                        <p>Infrastructure design and project management</p>
+                    </div>
+                    <div class="curriculum-grid">
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-book"></i>
+                                <h4>General Studies</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">GEN 311</span>
+                                    <span class="subject-name">Islamiat & Pak Studies</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 312</span>
+                                    <span class="subject-name">Project Management</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="curriculum-category">
+                            <div class="category-header">
+                                <i class="fas fa-building"></i>
+                                <h4>Technical Subjects</h4>
+                            </div>
+                            <ul class="subject-list">
+                                <li>
+                                    <span class="subject-code">CIVIL 323</span>
+                                    <span class="subject-name">Advanced Quantity Surveying</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 332</span>
+                                    <span class="subject-name">Environment Health and Safety</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 344</span>
+                                    <span class="subject-name">Hydraulics and Irrigation Engineering</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 353</span>
+                                    <span class="subject-name">Transportation Engineering</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 363</span>
+                                    <span class="subject-name">Concrete Technology and RCC Design</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 373</span>
+                                    <span class="subject-name">Soil Mechanics & Bridge Engineering</span>
+                                </li>
+                                <li>
+                                    <span class="subject-code">CIVIL 382</span>
+                                    <span class="subject-name">Civil Engineering Project</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program Highlights -->
+                <div class="program-highlights" data-animate="fadeInUp">
+                    <div class="highlight-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h5>Duration</h5>
+                            <p>3 Years (6 Semesters)</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-percentage"></i>
+                        <div>
+                            <h5>Practical Work</h5>
+                            <p>60% Hands-on Training</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h5>Certification</h5>
+                            <p>PBTE Recognized Diploma</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-industry"></i>
+                        <div>
+                            <h5>Industrial Training</h5>
+                            <p>Mandatory Internship</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,6 +381,55 @@
                     <div class="card card-feature card-glass" data-animate="fadeInUp" data-delay="300">
                         <div class="card-feature-icon"><i class="fas fa-project-diagram"></i></div>
                         <h5 class="card-title">Project Manager</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Faculty Section -->
+        <section class="staff-section">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 class="section-title">Meet Our Faculty</h2>
+                    <p class="section-subtitle">Building foundations of knowledge with experienced civil engineering
+                        professionals</p>
+                </div>
+
+                <div class="staff-grid">
+                    <!-- HOD -->
+                    <div class="staff-card" data-animate="fadeInUp">
+                        <span class="staff-badge">Head of Department</span>
+                        <div class="staff-avatar">UF</div>
+                        <h4 class="staff-name">Umar Farooq</h4>
+                        <p class="staff-position">Head of Department</p>
+                    </div>
+
+                    <!-- Instructor 1 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="100">
+                        <div class="staff-avatar">AM</div>
+                        <h4 class="staff-name">Aamir Mahmood</h4>
+                        <p class="staff-position">Instructor</p>
+                    </div>
+
+                    <!-- Instructor 2 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="200">
+                        <div class="staff-avatar">AD</div>
+                        <h4 class="staff-name">Ahmad Din</h4>
+                        <p class="staff-position">Instructor</p>
+                    </div>
+
+                    <!-- Instructor 3 -->
+                    <div class="staff-card" data-animate="fadeInUp" data-delay="300">
+                        <div class="staff-avatar">TK</div>
+                        <h4 class="staff-name">Tanveer Hayat Khilgi</h4>
+                        <p class="staff-position">Instructor</p>
+                    </div>
+
+                    <!-- Lab Technician -->
+                    <div class="staff-card" data-animate="fadeInUp">
+                        <div class="staff-avatar">AU</div>
+                        <h4 class="staff-name">Asad Ullah</h4>
+                        <p class="staff-position">Lab Technician</p>
                     </div>
                 </div>
             </div>

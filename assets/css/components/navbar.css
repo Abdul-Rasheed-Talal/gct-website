@@ -268,6 +268,11 @@
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
+/* Hide close button on desktop */
+.navbar-close {
+    display: none;
+}
+
 /* ===== MOBILE TOGGLE ===== */
 
 .navbar-toggle {
@@ -331,6 +336,30 @@
     .navbar-nav-wrapper.show {
         right: 0;
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Mobile close button */
+    .navbar-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(239, 68, 68, 0.15);
+        border: 1px solid rgba(239, 68, 68, 0.3);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        color: #ef4444;
+        font-size: 1.25rem;
+        transition: all 0.2s ease;
+    }
+
+    .navbar-close:hover {
+        background: rgba(239, 68, 68, 0.25);
+        transform: scale(1.05);
     }
 
     .navbar-nav {
