@@ -626,14 +626,19 @@ img:not([loading="lazy"]) {
 }
 
 [data-theme="light"] .campus-card {
-    background: #ffffff !important;
-    border-color: rgba(100, 116, 139, 0.2) !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+    background: linear-gradient(145deg, #ffffff, #f8fafc) !important;
+    border-color: rgba(100, 116, 139, 0.15) !important;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
 }
 
 [data-theme="light"] .campus-card:hover {
-    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2) !important;
-    border-color: #3b82f6 !important;
+    box-shadow:
+        0 25px 50px rgba(59, 130, 246, 0.15),
+        0 0 35px rgba(59, 130, 246, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 1) !important;
+    border-color: rgba(59, 130, 246, 0.4) !important;
 }
 
 [data-theme="light"] .campus-card p {
@@ -641,8 +646,9 @@ img:not([loading="lazy"]) {
 }
 
 [data-theme="light"] .red-title {
-    background: #3b82f6 !important;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important;
     color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3) !important;
 }
 
 [data-theme="light"] .read-link {
@@ -755,7 +761,7 @@ img:not([loading="lazy"]) {
 /* ----- Hero Carousel (Home Page) ----- */
 /* Hero section - make light theme match dark theme appearance */
 [data-theme="light"] .hero-bg-overlay {
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%) !important;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.25) 0%, rgba(15, 23, 42, 0.35) 100%) !important;
 }
 
 /* Keep carousel with dark appearance in light theme */
@@ -764,22 +770,22 @@ img:not([loading="lazy"]) {
 }
 
 [data-theme="light"] .hero-section .carousel-item::before {
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.7) 100%) !important;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.35) 0%, rgba(30, 41, 59, 0.3) 100%) !important;
 }
 
-/* Ensure carousel caption is above overlay - THEME AGNOSTIC */
+/* CRITICAL: Carousel caption alignment - MUST match dark theme exactly */
 [data-theme="light"] .carousel-caption {
     position: absolute !important;
     left: 50% !important;
     right: auto !important;
-    top: 50% !important;
+    top: 42% !important;
     bottom: auto !important;
     transform: translate(-50%, -50%) !important;
-    width: 80%;
-    max-width: 900px;
+    width: 90%;
+    max-width: 1000px;
     text-align: center !important;
     background: transparent !important;
-    padding: 0 !important;
+    padding: 0 20px !important;
     border-radius: 0 !important;
     z-index: 10 !important;
 }
@@ -810,6 +816,57 @@ p.fs-5.hero-text-white,
 [data-theme="light"] .carousel-item .carousel-caption p.hero-text-white {
     color: #ffffff !important;
     text-shadow: none !important;
+}
+
+/* ----- Light Theme Hero Cards ----- */
+[data-theme="light"] .hero-cards-section {
+    background: linear-gradient(to top, rgba(248, 250, 252, 0.98) 0%, rgba(248, 250, 252, 0.9) 40%, transparent 100%) !important;
+}
+
+[data-theme="light"] .hero-custom-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(241, 245, 249, 0.95)) !important;
+    border: 1px solid rgba(100, 116, 139, 0.15) !important;
+    border-bottom: 3px solid rgba(59, 130, 246, 0.4) !important;
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+}
+
+[data-theme="light"] .hero-custom-card:hover {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.98)) !important;
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.15),
+        0 0 30px rgba(59, 130, 246, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 1) !important;
+    border-color: rgba(59, 130, 246, 0.3) !important;
+    border-bottom-color: #3b82f6 !important;
+}
+
+[data-theme="light"] .hero-card-title {
+    color: #0f172a !important;
+    text-shadow: none !important;
+}
+
+[data-theme="light"] .hero-custom-card:hover .hero-card-title {
+    color: #3b82f6 !important;
+}
+
+[data-theme="light"] .hero-card-bottom-half {
+    color: #475569 !important;
+}
+
+[data-theme="light"] .hero-custom-card::after {
+    color: #3b82f6 !important;
+}
+
+[data-theme="light"] .hero-card-bg-image {
+    filter: grayscale(50%) contrast(1.1) !important;
+    opacity: 0.08 !important;
+}
+
+[data-theme="light"] .hero-custom-card:hover .hero-card-bg-image {
+    filter: grayscale(0%) contrast(1) !important;
+    opacity: 0.25 !important;
 }
 
 /* ----- Footer Headings ----- */
@@ -859,6 +916,126 @@ p.fs-5.hero-text-white,
 [data-theme="light"] .card li,
 [data-theme="light"] .card .card-text {
     color: #475569 !important;
+}
+
+/* ===== CURRICULUM SECTION LIGHT THEME ===== */
+
+/* Curriculum Tabs */
+[data-theme="light"] .curriculum-tab {
+    background: #ffffff !important;
+    border-color: rgba(100, 116, 139, 0.25) !important;
+    color: #475569 !important;
+}
+
+[data-theme="light"] .curriculum-tab:hover {
+    border-color: #3b82f6 !important;
+    color: #3b82f6 !important;
+    background: rgba(59, 130, 246, 0.05) !important;
+}
+
+[data-theme="light"] .curriculum-tab.active {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important;
+    border-color: #3b82f6 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3) !important;
+}
+
+[data-theme="light"] .curriculum-tab i {
+    color: inherit !important;
+}
+
+/* Curriculum Year Header */
+[data-theme="light"] .curriculum-year-header {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(241, 245, 249, 0.9)) !important;
+    border-color: rgba(100, 116, 139, 0.2) !important;
+}
+
+[data-theme="light"] .curriculum-year-header h3 {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] .curriculum-year-header p {
+    color: #64748b !important;
+}
+
+/* Year Badge */
+[data-theme="light"] .year-badge {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* Curriculum Category */
+[data-theme="light"] .curriculum-category {
+    background: #ffffff !important;
+    border-color: rgba(100, 116, 139, 0.2) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06) !important;
+}
+
+[data-theme="light"] .curriculum-category:hover {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.12) !important;
+}
+
+/* Category Header */
+[data-theme="light"] .category-header {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(241, 245, 249, 0.95)) !important;
+    border-bottom-color: rgba(100, 116, 139, 0.15) !important;
+}
+
+[data-theme="light"] .category-header h4 {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] .category-header i {
+    color: #3b82f6 !important;
+}
+
+/* Subject List */
+[data-theme="light"] .subject-list {
+    background: #ffffff !important;
+}
+
+[data-theme="light"] .subject-list li {
+    border-bottom-color: rgba(100, 116, 139, 0.1) !important;
+}
+
+[data-theme="light"] .subject-name {
+    color: #334155 !important;
+}
+
+[data-theme="light"] .subject-code {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important;
+    color: #ffffff !important;
+}
+
+/* Program Highlights */
+[data-theme="light"] .program-highlights {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.06), rgba(241, 245, 249, 0.9)) !important;
+    border-color: rgba(100, 116, 139, 0.2) !important;
+}
+
+[data-theme="light"] .highlight-item {
+    background: #ffffff !important;
+    border-color: rgba(100, 116, 139, 0.2) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .highlight-item:hover {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.12) !important;
+}
+
+[data-theme="light"] .highlight-item h5 {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] .highlight-item p {
+    color: #64748b !important;
+}
+
+[data-theme="light"] .highlight-item i {
+    color: #3b82f6 !important;
 }
 
 /* ----- Fix Hero Gradient Overlays ----- */
