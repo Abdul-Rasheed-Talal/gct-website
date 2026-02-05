@@ -53,6 +53,7 @@
 .btn-outline-light:hover {
   background-color: var(--accent-teal) !important;
   border-color: var(--accent-teal) !important;
+  border-color: #000 !important;
   color: var(--primary-dark) !important;
 }
 
@@ -3995,4 +3996,13 @@ textarea.form-input {
 
 [data-theme="light"] .team-member-info h5 {
   color: #0f172a;
+}
+.social-link-card:hover i {
+    color: #1d4ed8;
+}
+.social-link-card:hover span {
+    color: #1d4ed8; 
+}
+.event-badge{
+  margin-left: 15px ;
 }

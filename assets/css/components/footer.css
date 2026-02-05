@@ -549,7 +549,7 @@
 }
 
 /* ===== LIGHT THEME OVERRIDES ===== */
-[data-theme="light"] .footer {
+/* [data-theme="light"] .footer {
     background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
@@ -636,7 +636,7 @@
 [data-theme="light"] .footer-bottom-link:hover {
     color: #1e293b;
     background: rgba(59, 130, 246, 0.1);
-}
+} */
 
 /* ===== RESPONSIVE DESIGN ===== */
 

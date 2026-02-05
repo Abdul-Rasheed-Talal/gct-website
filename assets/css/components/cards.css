@@ -49,6 +49,7 @@
     background: rgba(0, 0, 0, 0.7);
 }
 
+
 /* ===== CARD BODY ===== */
 
 .card-body {
@@ -67,7 +68,7 @@
     font-size: var(--text-sm);
     margin-bottom: var(--space-4);
 }
-
+ 
 /* Card list items */
 .card li {
     color: #e2e8f0;
@@ -276,3 +277,4 @@
         font-size: var(--text-2xl);
     }
 }
+/* this is cchecking */
