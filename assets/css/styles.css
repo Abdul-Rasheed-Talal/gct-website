@@ -564,7 +564,7 @@ body {
 
 .hero-cards-section {
   position: absolute;
-  bottom: -40px;
+  bottom: -42px;
   left: 0;
   right: 0;
   z-index: 5;
@@ -2799,6 +2799,7 @@ textarea.form-input {
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 0.75rem;
+  margin-left: 20px;
 }
 
 .event-badge.sports {
