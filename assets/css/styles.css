@@ -255,8 +255,8 @@ body {
 
 .hero-section .carousel-item {
   position: relative;
-  height: 100vh;
-  min-height: 600px;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 /* Enhanced Dark Overlay with Gradient */
@@ -297,13 +297,13 @@ body {
   position: absolute !important;
   left: 50% !important;
   right: auto !important;
-  top: 42% !important;
+  top: 40% !important;
   bottom: auto !important;
   transform: translate(-50%, -50%) !important;
   width: 90%;
   max-width: 1000px;
   text-align: center !important;
-  z-index: 10;
+  z-index: 50;
   padding: 0 20px;
 }
 
@@ -564,10 +564,10 @@ body {
 
 .hero-cards-section {
   position: absolute;
-  bottom: 0;
+  bottom: -42px;
   left: 0;
   right: 0;
-  z-index: 30;
+  z-index: 5;
   padding: 0 1rem 1.5rem;
   background: linear-gradient(to top, rgba(5, 10, 21, 0.98) 0%, rgba(5, 10, 21, 0.85) 40%, transparent 100%);
 }
@@ -2799,6 +2799,7 @@ textarea.form-input {
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 0.75rem;
+  margin-left: 20px;
 }
 
 .event-badge.sports {
