@@ -3150,10 +3150,12 @@ textarea.form-input {
 .event-badge.sports {
   background: rgba(16, 185, 129, 0.15);
   color: #10b981;
+  padding: 4px 10px !important;
 }
 
 .event-badge.cultural {
   background: rgba(139, 92, 246, 0.15);
+    padding: 4px 10px !important;
   color: #8b5cf6;
 }
 
